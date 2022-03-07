@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <script>
+    // When document is ready Jquery Will Append the body into the document
+    $().ready(function () {
+      $("html").append(
+        "<body>\
+            <div id='container'>\
+                <div id='inner'>\
+                    <h1>Basic Jquery Example</h1>\
+                        <h1 id=1> Heading 1</h1>\
+                        <h1 id=2> Heading 2</h1>\
+                        <h1 id=3> Heading 3</h1>\
+                        </div>\
+                        </div>\
+                        </body>"
+      );
+      // This will Change the color of paragraph with id 1 to red
+      $("#1").css({ color: "green" });
+      // This will hide the h1 tag when we click the paragraph with id 3
+      $("#2").click(function () {
+        $("h1").hide();
+      });
+    });
+  </script>
+</html>
