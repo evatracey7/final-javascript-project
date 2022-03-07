@@ -1,0 +1,220 @@
+body{    
+    font-family: 'Source Code Pro', monospace;
+}
+/* Navbar */
+#navbar{
+    background-color: black;
+    padding: 10px;
+}
+#navbar-container{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+#navbar-container>a{
+    text-decoration: none;
+    font-size: 15px;
+    color: red;
+    margin: 10px;
+}
+/* Navbar End */
+
+/* Home */
+#home{
+    min-height: 600px;
+    padding-top: 30px;
+}
+#home-container{
+    text-align: center;
+    color: red;
+}
+#home-container>h1{
+    font-size: 50px;
+}
+/* Home End */
+
+/* Photography */
+.photo-container{
+    padding: 30px;
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+@media only screen and (max-width:850px){
+    .photo-container{
+        grid-template-columns: auto auto;
+        /* grid-template-rows: 400px 400px; */
+        padding: 10px;
+    }
+}
+@media only screen and (max-width:450px){
+    .photo-container{
+        grid-template-columns: auto;
+        
+    }
+}
+/* Photography End */
+/* Lighthouse */
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  .row > .column {
+    padding: 0 8px;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* .column {
+    float: left;
+    width: 25%;
+  } */
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+  }
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+  }
+  /* The Close Button */
+  .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  .close:hover,
+  .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .mySlides {
+    display: none;
+  }
+  .cursor {
+    cursor: pointer;
+  }
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+     position: absolute;
+    top: 23%; 
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: #dc3545;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  /* .column {
+    float: left;
+    width: 25%;
+  } */
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #dc3545;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  img {
+    margin-bottom: -4px;
+  }
+  .caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+  }
+  .demo {
+    opacity: 0.6;
+  }
+  .active,
+  .demo:hover {
+    opacity: 1;
+    /* border: 1px solid black; */
+  }
+  img.hover-shadow {
+    transition: 0.3s;
+  }
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+/* Lighthouse End */
+
+/* Featured Video */
+#featured-video{
+    text-align: center;
+    color: red;
+}
+#featured-video{
+    font-size: 30px;
+}
+/* Featured Video End */
+
+/* Contact */
+#contact-form{
+    margin: 10px auto;
+    background-color: #e9ecef;
+    padding: 20px;
+}
+#contact-form>div{
+    margin: 20px auto;
+    font-size: 25px;
+    width: max-content;
+    min-width: 60%;
+}
+#data-input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 8px;
+}
+#submitBtn{
+   margin: 20px 0px;
+   padding: 10px;
+   font-size: 15px;
+}
+/* Contact */

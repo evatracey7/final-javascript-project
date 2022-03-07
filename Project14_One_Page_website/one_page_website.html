@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./CSS/one_page_website.css" />
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google font end -->
+  </head>
+
+  <body style="margin: 0px">
+    <nav id="navbar">
+      <div id="navbar-container">
+        <a href="#home">HOME</a>
+        <a href="#lighthouse">PHOTOGRAPHY</a>
+        <a href="#featured-video">FEATURED VIDEOS</a>
+        <a href="#contact">CONTACT US</a>
+      </div>
+    </nav>
+
+    <section id="home">
+      <div id="home-container">
+        <h1>Up and Coming Films</h1>
+        <img
+          src="./images/movie_icon.svg"
+          alt="Movie icon"
+          width="200px"
+          height="200px"
+        />
+        <h2>AN OUTDOOR MEDIA COMPANY</h2>
+      </div>
+    </section>
+
+    <section id="lighthouse">
+      <h1 style="color: red; text-align: center; font-size: 40px">
+        PHOTOGRAPHY
+      </h1>
+      <div class="photo-container row">
+        <div>
+          <img
+            src="./images/thumbnail_1.jpg"
+            style="width: 100%"
+            onclick="openModal();currentSlide(1)"
+            class="hover-shadow cursor"
+          />
+        </div>
+        <div>
+          <img
+            src="./images/thumbnail_2.jpg"
+            style="width: 100%"
+            height="89%"
+            onclick="openModal();currentSlide(2)"
+            class="hover-shadow cursor"
+          />
+        </div>
+        <div>
+          <img
+            src="./images/thumbnail_3.jpg"
+            style="width: 100%"
+            height="89%"
+            onclick="openModal();currentSlide(3)"
+            class="hover-shadow cursor"
+          />
+        </div>
+        <div>
+          <img
+            src="./images/thumbnail_4.jpg"
+            style="width: 100%"
+            height="89%"
+            onclick="openModal();currentSlide(4)"
+            class="hover-shadow cursor"
+          />
+        </div>
+        <div>
+          <img
+            src="./images/thumbnail_5.jpg"
+            style="width: 100%"
+            onclick="openModal();currentSlide(5)"
+            class="hover-shadow cursor"
+          />
+        </div>
+        <div>
+          <img
+            src="./images/thumbnail_6.jpg"
+            style="width: 100%"
+            onclick="openModal();currentSlide(6)"
+            class="hover-shadow cursor"
+          />
+        </div>
+        <div>
+          <img
+            src="./images/thumbnail_7.jpg"
+            style="width: 100%"
+            onclick="openModal();currentSlide(7)"
+            class="hover-shadow cursor"
+          />
+        </div>
+        <div>
+          <img
+            src="./images/thumbnail_8.jpg"
+            style="width: 100%"
+            onclick="openModal();currentSlide(8)"
+            class="hover-shadow cursor"
+          />
+        </div>
+        <div>
+          <img
+            src="./images/thumbnail_9.jpg"
+            style="width: 100%"
+            height="100%"
+            onclick="openModal();currentSlide(9)"
+            class="hover-shadow cursor"
+          />
+        </div>
+        <div>
+          <img
+            src="./images/thumbnail_10.jpg"
+            style="width: 100%"
+            onclick="openModal();currentSlide(10)"
+            class="hover-shadow cursor"
+          />
+        </div>
+        <div>
+          <img
+            src="./images/thumbnail_11.jpg"
+            style="width: 100%"
+            onclick="openModal();currentSlide(11)"
+            class="hover-shadow cursor"
+          />
+        </div>
+        <div>
+          <img
+            src="./images/thumbnail_12.jpg"
+            style="width: 100%"
+            height="100%"
+            onclick="openModal();currentSlide(12)"
+            class="hover-shadow cursor"
+          />
+        </div>
+      </div>
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+          <div class="mySlides">
+            <div class="numbertext">1 / 12</div>
+            <img src="./images/thumbnail_1.jpg" width="100%" height="500px" />
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">2 / 12</div>
+            <img src="./images/thumbnail_2.jpg" width="100%" height="500px" />
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">3 / 12</div>
+            <img src="./images/thumbnail_3.jpg" width="100%" height="500px" />
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">4 / 12</div>
+            <img src="./images/thumbnail_4.jpg" width="100%" height="500px" />
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">5 / 12</div>
+            <img src="./images/thumbnail_5.jpg" width="100%" height="500px" />
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">6 / 12</div>
+            <img src="./images/thumbnail_6.jpg" width="100%" height="500px" />
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">7 / 12</div>
+            <img src="./images/thumbnail_7.jpg" width="100%" height="500px" />
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">8 / 12</div>
+            <img src="./images/thumbnail_8.jpg" width="100%" height="500px" />
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">9 / 12</div>
+            <img src="./images/thumbnail_9.jpg" width="100%" height="500px" />
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">10 / 12</div>
+            <img src="./images/thumbnail_10.jpg" width="100%" height="500px" />
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">11 / 12</div>
+            <img src="./images/thumbnail_11.jpg" width="100%" height="500px" />
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">12 / 12</div>
+            <img src="./images/thumbnail_12.jpg" width="100%" height="500px" />
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+          <!-- Thumbnail image controls -->
+          <div class="photo-container">
+            <div class="column">
+              <img
+                class="demo"
+                src="./images/thumbnail_1.jpg"
+                onclick="currentSlide(1)"
+                alt="Rock Hill Climbing"
+                width="100%"
+                height="200px"
+              />
+            </div>
+
+            <div class="column">
+              <img
+                class="demo"
+                src="./images/thumbnail_2.jpg"
+                onclick="currentSlide(2)"
+                alt="Antartic Glaciar"
+                width="100%"
+                height="200px"
+              />
+            </div>
+
+            <div class="column">
+              <img
+                class="demo"
+                src="./images/thumbnail_3.jpg"
+                onclick="currentSlide(3)"
+                alt="Antartic Glacier Climbing"
+                width="100%"
+                height="200px"
+              />
+            </div>
+
+            <div class="column">
+              <img
+                class="demo"
+                src="./images/thumbnail_4.jpg"
+                onclick="currentSlide(4)"
+                alt="Mount Gondhni"
+                width="100%"
+                height="200px"
+              />
+            </div>
+
+            <div class="column">
+              <img
+                class="demo"
+                src="./images/thumbnail_5.jpg"
+                onclick="currentSlide(5)"
+                alt="Jaripatka Hill"
+                width="100%"
+                height="200px"
+              />
+            </div>
+
+            <div class="column">
+              <img
+                class="demo"
+                src="./images/thumbnail_6.jpg"
+                onclick="currentSlide(6)"
+                alt="Ecudoris Park"
+                width="100%"
+                height="200px"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo"
+                src="./images/thumbnail_7.jpg"
+                onclick="currentSlide(7)"
+                alt="St.Louis Mountain"
+                width="100%"
+                height="200px"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo"
+                src="./images/thumbnail_8.jpg"
+                onclick="currentSlide(8)"
+                alt="Ferarist Hill "
+                width="100%"
+                height="200px"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo"
+                src="./images/thumbnail_9.jpg"
+                onclick="currentSlide(9)"
+                alt="Shimalaya Mountain"
+                width="100%"
+                height="200px"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo"
+                src="./images/thumbnail_10.jpg"
+                onclick="currentSlide(10)"
+                alt="Mount Burj"
+                width="100%"
+                height="200px"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo"
+                src="./images/thumbnail_11.jpg"
+                onclick="currentSlide(11)"
+                alt="Okaye's Sunset Point"
+                width="100%"
+                height="200px"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo"
+                src="./images/thumbnail_12.jpg"
+                onclick="currentSlide(12)"
+                alt="Mount Peru"
+                width="100%"
+                height="200px"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="featured-video">
+      <h1>FEATURED VIDEO</h1>
+      <iframe
+        src="https://www.youtube.com/embed/vVeH6hs_8R8"
+        width="460px"
+        height="320px"
+        frameborder="0"
+      ></iframe
+      ><br />
+      <iframe
+        src="https://www.youtube.com/embed/w1V-x7FLKfs"
+        frameborder="0"
+        width="460px"
+        height="320px"
+      ></iframe
+      ><br />
+      <iframe
+        src="https://www.youtube.com/embed/8Vw212Z1k8s"
+        frameborder="0"
+        width="460px"
+        height="320px"
+      ></iframe>
+    </section>
+
+    <section id="contact">
+      <h1 style="text-align: center; font-size: 50px; color: red">
+        LET US TELL YOUR STORY!
+      </h1>
+      <p style="text-align: center">CONTACT US TO BE FEATURED</p>
+
+      <form id="contact-form">
+        <div>
+          <label for="fname">First Name</label><br />
+          <input type="text" name="fname" id="data-input" />
+        </div>
+
+        <div>
+          <label for="lname">Last Name</label><br />
+          <input type="text" name="lname" id="data-input" />
+        </div>
+
+        <div>
+          <label for="Email">Email</label><br />
+          <input type="text" name="email" id="data-input" />
+        </div>
+
+        <div>
+          <label for="phone-number">Phone Number</label><br />
+          <input type="tel" name="phone-number" id="data-input" />
+        </div>
+
+        <div>
+          <label for="age">Age</label><br />
+          <input type="number" id="data-input" />
+          <input type="submit" value="Submit" id="submitBtn" />
+        </div>
+      </form>
+    </section>
+    <footer>
+      <p style="text-align: center; color: red">
+        Photos belong to C.Kirk Hilton | Video Copyright 2021 Up and Coming
+        Films | Salt Lake City, Utah
+      </p>
+    </footer>
+  </body>
+  <script src="./Js/one-page-website.js"></script>
+</html>
