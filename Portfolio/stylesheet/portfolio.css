@@ -1,0 +1,136 @@
+body{margin: 0px;}
+:root{
+    --blue: #17334b;
+}
+.color-blue{
+    color: var(--blue);
+    text-align: center;
+    font-size: 40px;
+    margin: 0px;
+}
+.row{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 400px;
+    grid-row-gap: 30px;
+    padding: 10px;
+}
+@media only screen and (max-width:850px){
+    .row{
+        grid-template-columns: 100%;
+        grid-template-rows: 400px 400px;
+        padding: 10px;
+    }
+}
+/* Navbar */
+#navbar{
+    display: flex;
+    background-color: var(--blue);
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+#navbar>a{
+    margin: 10px 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+}
+#navbar>a:hover{
+    background-color: white;
+    color: var(--blue);
+}
+/* Navbar End */
+
+/* Home */
+#home{
+  background-image: url(../images/background_image.jpg), linear-gradient(to bottom, #323232bb 0%, #3f3f3fb6 40%, #1c1c1c77 150%), linear-gradient(to top, rgba(255, 255, 255, 0.171) 0%, rgba(0, 0, 0, 0.171) 200%);
+  background-blend-mode: multiply;;
+  min-height: 573px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#intro{
+    text-align: center;
+    padding-top: 70px;
+    color: white;
+}
+#intro>h1{
+    font-size: 60px;
+}
+/* Home End */
+
+/* About */
+/* #about{
+    display: grid;
+    grid-template-columns: auto auto;
+} */
+.about-col-1{
+    padding: 20px;
+    background-color: var(--blue);
+    border-radius: 8px;
+    height: 400px;
+    box-sizing: border-box;
+
+}
+.about-col-2{
+    text-align: justify;
+    padding: 20px;
+    box-sizing: content-box;
+}
+/* About End */
+/* Github */
+.git-col-1{
+    padding: 20px;
+    background-color: var(--blue);
+    height: 400px;
+    border-radius: 8px;
+    box-sizing: border-box;
+
+}
+.git-col-2{
+    text-align: center;
+    height: 100%;
+}
+.git-col-2>h1{
+    font-size: 50px;
+}
+/* Github End */
+/* Contact */
+form{
+    width: fit-content;
+    margin: 0px auto;
+}
+form>div{
+    margin: 20px 10px;
+}
+input{
+    /* width: 100%; */
+    font-size: 20px;
+}
+label{
+    font-size: 25px;
+}
+.submitBtn{
+    font-size: 18px;
+    width: 120px;
+    padding: 10px 12px;
+    margin-left: 10px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--blue);
+}
+.submitBtn:hover{
+    background-color: white;
+    color: var(--blue);
+    border: 2px solid var(--blue);
+    cursor: pointer;
+}
+/* Contact End */
+footer{
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+}
